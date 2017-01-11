@@ -17,7 +17,7 @@ public class ExorcizeEnnemyScript : MonoBehaviour {
 		exorcize.onClick.AddListener(killEnnemy);
 		sendActivityReference("fr.vincentmazet.utilslibrary.FlashLight");
 
-		source = GameObject.FindGameObjectWithTag ("Flash").GetComponent<AudioSource> ();
+		source = GameObject.FindGameObjectWithTag ("Audio").GetComponent<AudioSource> ();
 
 	}
 
