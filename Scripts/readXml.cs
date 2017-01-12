@@ -22,7 +22,7 @@ public class readXml : MonoBehaviour {
 	public void initiate (){
 		Dicts = new List<Dict> ();
 		List<Key> Keys;
-		xmlDoc = XDocument.Load( "Assets/Resources/firstSequence.xml" );
+		xmlDoc = XDocument.Load( "Assets/Resources/Sequences/firstSequence.xml" );
 
 		if (xmlDoc == null) {
 			Debug.Log (" Xml Null");
