@@ -41,7 +41,10 @@ public class ExorcizeEnnemyScript : MonoBehaviour {
 		GameObject.FindGameObjectWithTag ("Detect3").GetComponent<SpriteRenderer> ().enabled = false;
 		GameObject.FindGameObjectWithTag ("Detect2").GetComponent<SpriteRenderer> ().enabled = false;
 		GameObject.FindGameObjectWithTag ("Detect1").GetComponent<SpriteRenderer> ().enabled = false;
-
+		GameObject.FindGameObjectWithTag("DetectRight").GetComponent<SpriteRenderer> ().sprite = Resources.Load<Sprite>("HUD/arrow_right_0");		
+		GameObject.FindGameObjectWithTag("DetectLeft").GetComponent<SpriteRenderer> ().sprite = Resources.Load<Sprite>("HUD/arrow_left_0");
+		GameObject.FindGameObjectWithTag("DetectUp").GetComponent<SpriteRenderer> ().sprite = Resources.Load<Sprite>("HUD/arrow_up_0");
+		GameObject.FindGameObjectWithTag("DetectDown").GetComponent<SpriteRenderer> ().sprite = Resources.Load<Sprite>("HUD/arrow_down_0");	
 	}
 
 	void sendActivityReference(string packageName)

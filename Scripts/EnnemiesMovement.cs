@@ -10,7 +10,6 @@ public class EnnemiesMovement : MonoBehaviour {
 	private float initialZ;
 	Transform ennemy;
 
-
 	void Start(){
 		ennemy = GameObject.FindGameObjectWithTag("Ennemy").GetComponent<Transform> ();
 		initialX  = ennemy.position.x;

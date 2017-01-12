@@ -21,7 +21,7 @@ public class Scan : MonoBehaviour {
 	void launchScan(){
 		spriteScan.GetComponent<Animator> ().runtimeAnimatorController = null;
 		spriteScan.GetComponent<Animator> ().runtimeAnimatorController = spriteController;
-		AudioClip sound = Resources.Load<AudioClip>("Sounds/Ames_scan_pièce");
+		AudioClip sound = Resources.Load<AudioClip> ("Sounds/Ames_scan_pièce");
 		source.PlayOneShot (sound);
 	}
 }
