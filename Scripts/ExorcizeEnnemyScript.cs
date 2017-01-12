@@ -36,6 +36,7 @@ public class ExorcizeEnnemyScript : MonoBehaviour {
 			AudioClip sound = Resources.Load<AudioClip>("Sounds/Ames_flash_manque");
 			source.PlayOneShot (sound);
 		}
+		stopFlash ();
 		BackCamScript.StartCam ();
 		GameObject.FindGameObjectWithTag ("Detect4").GetComponent<SpriteRenderer> ().enabled = false;
 		GameObject.FindGameObjectWithTag ("Detect3").GetComponent<SpriteRenderer> ().enabled = false;
